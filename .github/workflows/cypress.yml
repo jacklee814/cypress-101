@@ -1,7 +1,5 @@
 name: example-basic-pnpm
-on:
-  branch_protection_rule:
-    types: [created, deleted]
+on: [push]
 jobs:
   basic-pnpm:
     runs-on: ubuntu-latest
