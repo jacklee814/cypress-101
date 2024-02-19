@@ -22,6 +22,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
+          component: true
           browser: chrome
       - name: Slack Notification
         uses: slackapi/slack-github-action@v1.25.0
