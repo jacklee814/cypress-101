@@ -1,5 +1,6 @@
 name: example-basic-pnpm
-on: [push]
+on:
+  workflow_dispatch:
 jobs:
   basic-pnpm:
     runs-on: ubuntu-latest
