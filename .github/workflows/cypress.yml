@@ -30,4 +30,4 @@ jobs:
           channel-id: "C06KC17LCUV"
           payload: "{\"text\": \"posting from a github action\"}"
         env:
-          SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+          SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
