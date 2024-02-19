@@ -27,7 +27,7 @@ jobs:
       - name: Slack Notification
         uses: slackapi/slack-github-action@v1.25.0
         with:
-          channel-id: "C06E5DDVCJ1"
+          channel-id: "C06KC17LCUV"
           payload: |
                 {
                   "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
@@ -42,4 +42,4 @@ jobs:
                   ]
                 }
         env:
-          SLACK_BOT_TOKEN: "xoxb-6469834006183-6660564847250-fBJDZ7cHGNDiD1ZVRqlAI6KX"
+          SLACK_BOT_TOKEN: "xoxb-163467672548-6674070337105-Pls8PDa5KuPo7DDgjYGGiZex"
