@@ -27,7 +27,7 @@ jobs:
       - name: Slack Notification
         uses: slackapi/slack-github-action@v1.25.0
         with:
-          channel-id: 'C06E5DDVCJ1'
+          channel-id: "C06E5DDVCJ1"
           slack-message: "GitHub build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
