@@ -42,4 +42,4 @@ jobs:
                   ]
                 }
         env:
-          SLACK_BOT_TOKEN: "y9GKO9lKDPDdB75dCx2fGqxZ"
+          SLACK_BOT_TOKEN: "xoxb-6469834006183-6660564847250-cqukRVcQJQlgygqRDGASWiYG"
