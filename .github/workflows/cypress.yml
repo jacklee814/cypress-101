@@ -25,12 +25,9 @@ jobs:
           component: true
           browser: chrome
       - name: Slack Notification
-        uses: rtCamp/action-slack-notify@v2
+        uses: slackapi/slack-github-action@v1.25.0
+        with:
+          channel-id: 'C06E5DDVCJ1'
+          slack-message: "GitHub build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
         env:
-          SLACK_CHANNEL: general
-          SLACK_COLOR: ${{ job.status }}
-          SLACK_ICON: https://github.com/rtCamp.png?size=48
-          SLACK_MESSAGE: 'Post Content :rocket:'
-          SLACK_TITLE: Post Title
-          SLACK_USERNAME: rtCamp
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
