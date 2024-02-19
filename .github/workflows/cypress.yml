@@ -1,6 +1,5 @@
 name: example-basic-pnpm
-on:
-  workflow_dispatch:
+on: [push, workflow_dispatch, pull_request,]
 jobs:
   basic-pnpm:
     runs-on: ubuntu-latest
@@ -23,12 +22,11 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          component: true
           browser: chrome
       - name: Slack Notification
         uses: slackapi/slack-github-action@v1.25.0
         with:
-          channel-id: "C06E5DDVCJ1"
+          channel-id: "C06KC17LCUV"
           payload: "{\"text\": \"posting from a github action\"}"
         env:
-          SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
+          SLACK_WEBHOOK_URL: "https://hooks.slack.com/services/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"
